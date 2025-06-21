@@ -18,3 +18,10 @@ export async function GET(){
     const getproducts=await product.find();
     return NextResponse.json({success:true, products:getproducts})
 }
+
+export async function DELETE(request) {
+  await connectDB();
+  const { id } = await request.json();
+   const deletedProduct = await product.findByIdAndDelete(id);
+   return NextResponse.json({ success: true, message: "Product deleted successfully",product:deletedProduct });
+  }
