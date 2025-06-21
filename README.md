@@ -10,7 +10,7 @@ Naksh is a modern and elegant jewelry e-commerce web application built with **Ne
 
 
 git clone https://github.com/satyamsr39/geer-intern-assisgnment.git
-cd geer-intern-assisgnment
+ ###### cd geer-intern-assisgnment
 
 ### 2. Install dependencies
 npm install 
